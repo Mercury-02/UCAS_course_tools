@@ -1,2 +1,15 @@
 # UCAS_course_tools
 果壳抢课助手，2025年版
+
+原理是使用edgedriver或chromedriver锁定选课网页的元素模拟点击和内容输入，遇到验证码部分则依赖ddddocr识别
+
+## 食用方法
+这里提供两种代码，一种是AI味很浓的python源码，方便各位大佬修改使用。
+
+需要安装主要依赖 selenium 注意selenium的依赖pillow需要安装9.5版本的，安装最新版会报错
+另外ddddocr需要安装在python3.12或3.11，若你的python为3.13及以上则不兼容
+其他依赖报错时使用pip安装即可
+
+使用中在源码内修改账号密码和需要抢课或捡漏的课号ID即可
+
+另外一个，给没有代码基础的用户提供了打包好的exe文件及其依赖，打包使用pyinstaller打包，把edgedirver.exe也放在一起了，点击即用。
